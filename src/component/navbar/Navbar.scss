@@ -1,0 +1,39 @@
+
+.navbar{
+    min-height: 16vh;
+    max-height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: fit-content;
+        margin-left: 16px;
+        img{
+            width: 16vh;
+        }
+    }
+    .options{
+        margin-right: 16px;
+        max-width: 34vw;
+        width: 100%;
+        min-height: 16vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            font-size: large;
+            text-align: center;
+            max-width: fit-content;
+            cursor: pointer;
+            color: gold;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 104vh;
+  max-height: 104vh;
+  .img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    span {
+        position: absolute;
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+      color: silver;
+      max-width: fit-content;
+      font-size: 2rem;
+      cursor: pointer;
+      text-align: center;
+    }
+    .next{
+        right: 5%;
+    }
+    .previous{
+        left: 5%;
+    }
+    
+    img {
+      width: 85vw;
+      
+    }
+  }
+}

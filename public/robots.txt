@@ -1,0 +1,37 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+export function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        let offset = 0; // Default offset for non-Contact sections
+
+        // if (sectionId === 'Contact') {
+        //     offset = 90; 
+        // }
+        // if (sectionId === 'About') {
+        //     offset = 20; 
+        // }
+
+        window.scrollTo({
+            top: section.offsetTop + offset,
+            behavior: 'smooth'
+        });
+    }
+}
+
+
+
+window.innerWidth
+window.innerHeight
+window.pageXOffset
+window.pageYOffset
+document.documentElement.clientWidth
+document.documentElement.clientHeight
+document.documentElement.scrollLeft
+document.documentElement.scrollTop
+document.body.clientWidth
+document.body.clientHeight
+document.body.scrollLeft
+document.body.scrollTop

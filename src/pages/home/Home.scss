@@ -1,0 +1,35 @@
+.home{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./pizzaimgforhome2.jpg");
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    p{
+        text-decoration: underline;
+        font-family: cursive;
+        max-width: fit-content;
+        font-size: x-large;
+        text-align: center;
+        color: rgb(226, 226, 226);
+    }
+    h1{
+        font-size: 4rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        text-align: center;
+        color: rgb(226, 226, 226);
+        font-family: Bangers;
+        margin-top: 18vh;
+    }
+    span{  
+        font-family: Bangers;
+        color: gold;
+    }
+    
+}

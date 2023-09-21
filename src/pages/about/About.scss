@@ -1,0 +1,53 @@
+.about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        max-height: 100vh;
+      .img{
+        margin-top: 18vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 100vw;
+        width: 100%;
+        // background-color: palevioletred;
+        max-height: 52vh;
+        min-height: 52vh;
+       img{
+        width: 21vw;
+       } 
+       .one, .two{
+        max-height: 52vh;
+        min-height: 52vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        p{
+            color: silver;
+            font-size: x-large;
+        }
+        u{
+            font-size: large;
+        }
+       }
+      }
+      .data{
+        // background-color: aliceblue;
+        min-height: 31vh;
+        max-height: 31vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        p{
+
+            text-align: center;
+            font-size: x-large;
+            color: silver;
+        }
+      }
+}
