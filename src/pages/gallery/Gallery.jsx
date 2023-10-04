@@ -50,12 +50,8 @@ function Gallery() {
     }
   };
 
-  //   setInterval(() => {
-  //     nextImg()
-  //   }, 5000);
-
   return (
-    <div className="gallery">
+    <div id="gallery" className="gallery">
       <div className="img-div">
         <span
           onClick={() => {
@@ -66,7 +62,6 @@ function Gallery() {
         >
           <IoIosArrowBack />
         </span>
-
         {indexNo % 2 === 0 || indexNo === 0 ? (
           <>
             <img src={galData[indexNo].img} alt="" />
@@ -76,7 +71,6 @@ function Gallery() {
             <img src={galData[indexNo].img} alt="" />
           </>
         )}
-
         <span
           onClick={() => {
             nextImg();

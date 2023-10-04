@@ -2,23 +2,27 @@ import React, {  useState } from 'react'
 import "./Navbar.scss"
 import logo from "./logo.png"
 function Navbar() {
-  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+  const [navClass, setNavClass] = useState("navbar");
   const setScroll = (()=>{
-    setScrollPosition(window.scrollY)
+    if (window.scrollY > 272) {
+      setNavClass("navbar black-bg")
+    } else {
+      setNavClass("navbar")
+    }
   })
   window.addEventListener("scroll",setScroll)
   
   return (
-    <div  className="navbar">
+    <div  className={navClass}>
         <div className="logo">
             <img src={logo} alt="logo" />
             </div>
     <div className="options">
-        <span>Home</span>
-        <span>Gallery</span>
-        <span>Menu</span>
-        <span>About</span>
-        <span>Contact Us</span>
+        <a href="#home"  className="span">Home</a>
+        <a href="#gallery" className="span">Gallery</a>
+        <a href="#menu" className="span">Menu</a>
+        <a href="#about" className="span">About</a>
+        <a href="#contact" className="span">Contact Us</a>
     </div>
     </div>
   )

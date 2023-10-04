@@ -2,7 +2,7 @@ import React from 'react'
 import "./Home.scss"
 function Home() {
   return (
-    <div className='home'>
+    <div id='home' className='home'>
 
 
  <h1><span>LAZEEZA</span> PIZZA <br />& <span>RESTRO</span></h1>

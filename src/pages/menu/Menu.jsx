@@ -10,7 +10,7 @@ import menu5 from "../images/5.jpg"
 import menu6 from "../images/6.jpg"
 function Menu() {
 
-const [menuImg, setMenuImg] = useState([{img:menu1},{img:menu2},{img:menu3},{img:menu4},{img:menu5},{img:menu6},]);
+const [menuImg] = useState([{img:menu1},{img:menu2},{img:menu3},{img:menu4},{img:menu5},{img:menu6},]);
 
 const menuImgLength = menuImg.length - 1;
   const [indexNo, setIndexNo] = useState(0);
@@ -30,7 +30,7 @@ const menuImgLength = menuImg.length - 1;
 
 
   return (
-    <div className='menu'>
+    <div id='menu' className='menu'>
 <div className="img-div">
 
 <span  style={{ visibility: indexNo === 0 ? "hidden" : "visible" }}

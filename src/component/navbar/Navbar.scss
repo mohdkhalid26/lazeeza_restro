@@ -1,5 +1,10 @@
-
+.black-bg{
+    background-color: rgba(0, 0, 0, 0.700);
+    transition: background-color 700ms ;
+}
 .navbar{
+    z-index: 1;
+    transition: background-color 700ms ;
     min-height: 16vh;
     max-height: 16vh;
     display: flex;
@@ -18,14 +23,15 @@
         }
     }
     .options{
-        margin-right: 16px;
-        max-width: 34vw;
+        margin-right: 25px;
+        max-width: 43vw;
         width: 100%;
         min-height: 16vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        span{
+        .span{
+            text-decoration: none;
             font-size: large;
             text-align: center;
             max-width: fit-content;
