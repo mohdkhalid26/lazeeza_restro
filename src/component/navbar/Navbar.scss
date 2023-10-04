@@ -20,6 +20,9 @@
         margin-left: 16px;
         img{
             width: 16vh;
+            &::selection{
+                background: transparent;
+            }
         }
     }
     .options{

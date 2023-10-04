@@ -32,6 +32,7 @@ iframe{
         height: 52vh;
         filter: invert(92%);
         opacity: 0;
+        
     }
 
 }
@@ -72,6 +73,9 @@ iframe{
         opacity: 1;
         filter: invert(92%);
        
+      &::selection{
+        background: transparent;
+      }
     }
-//   
+
 }

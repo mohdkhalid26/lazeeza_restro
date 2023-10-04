@@ -25,14 +25,24 @@
     }
     .next{
         right: 5%;
+        
+      &::selection{
+        background: transparent;
+      }
     }
     .previous{
         left: 5%;
+        
+      &::selection{
+        background: transparent;
+      }
     }
     
     img {
       width: 85vw;
-      
+      &::selection{
+        background: transparent;
+      }
     }
   }
 }

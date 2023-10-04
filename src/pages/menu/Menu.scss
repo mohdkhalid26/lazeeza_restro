@@ -21,15 +21,26 @@
           text-align: center;
         }
         .next{
-            right: 5%;
+          right: 5%;
+          
+      &::selection{
+        background: transparent;
+      }
         }
         .previous{
             left: 5%;
+            
+      &::selection{
+        background: transparent;
+      }
         }
         
         img {
           width: 61vw;
           
+      &::selection{
+        background: transparent;
+      }
         }
       }
 }
