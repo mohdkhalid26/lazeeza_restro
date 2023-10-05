@@ -1,4 +1,10 @@
-.footer-show {
+.footer-show{
+  bottom: 0%;
+}
+.footer-hide{
+  bottom: -25%;
+}
+.footer-show, .footer-hide {
     transition: bottom 250ms;
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 100vw;
@@ -6,7 +12,6 @@
   min-height: 16vh;
   max-height: 16vh;
   position: fixed;
-  bottom: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,62 +61,117 @@
     font-size: large;
   }
 }
-.footer-hide {
-    transition: bottom 250ms;
-    background-color: rgba(0, 0, 0, 0.7);
-    max-width: 100vw;
-    width: 100%;
-    min-height: 16vh;
-    max-height: 16vh;
-    position: fixed;
-    bottom: -25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
+  
+  @media screen and (max-width : 1111px) {
+    .footer-show, .footer-hide {
     .copyright {
-      margin-right: 18%;
-      color: gold;
-      font-size: large;
-      width: fit-content;
-      span {
-        font-size: xx-large;
-      }
+      margin-right: 7%;
+    }
+    
+  }
+  }
+  @media screen and (max-width : 970px) {
+    .footer-show, .footer-hide {
+    
+    .address {
+      text-align: center;
+      width: 43%;
+     }
+  }
+  }
+  @media screen and (max-width : 850px) {
+    .footer-show, .footer-hide {
+    .copyright {
+      margin: 16px;
+    }
+    
+  }
+  }
+  @media screen and (max-width : 772px) {
+    .footer-show, .footer-hide {
+      min-height: 14vh;
+      max-height: 14vh;
+    .copyright {
+      font-size: medium;
     }
     .social {
-      width: fit-content;
-      margin: 16px;
       .insta {
-        font-size: xx-large;
-  
-        color: gold;
-        text-decoration: none;
-      }
+      font-size: x-large;
     }
-    .contact {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: fit-content;
-      .email {
-        font-size: xx-large;
-  
-        margin: 16px;
-        text-decoration: none;
-        color: gold;
+  }
+  .contact {
+    .email {
+        font-size: x-large;
       }
       .number {
-        font-size: xx-large;
-        margin: 16px;
-        text-decoration: none;
-        color: gold;
+        font-size: x-large;
       }
     }
     .address {
-      margin: 16px;
-      text-decoration: underline;
-      color: gold;
-      width: fit-content;
-      font-size: large;
-    }
+      font-size: medium;
+     }
+  }
   }
   
+@media screen and (max-width:700px) {
+  .footer-show, .footer-hide {
+   
+  .copyright {
+    font-size: small;
+  }
+ 
+  .address {
+    font-size: small;
+   }
+}
+}
+ 
+@media screen and (max-width:653px) {
+  .footer-show, .footer-hide {
+    .social{
+      .insta{font-size: large;}
+    }
+    .contact {
+      .email {
+        font-size:large;
+  }
+      .number {
+        font-size: large;
+       }
+    }
+    .copyright{
+      span{
+        font-size: x-large;
+      }
+    }
+}
+}
+
+@media screen and (max-width:610px) {
+  .footer-show, .footer-hide {
+    .social{
+      margin: 7px;
+      
+    }
+    .contact {
+      .email {
+        margin: 7px;
+      }
+      .number {
+        margin: 7px;
+      }
+    }
+    .copyright{
+      margin: 7px;
+    }
+    .address{
+      margin: 7px;
+    }
+}
+}
+@media screen and (max-width:480px) {
+  .footer-show, .footer-hide {
+    min-height: 10vh;
+    max-height: 10vh;}
+}

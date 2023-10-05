@@ -33,3 +33,33 @@
     }
     
 }
+@media screen and (max-width:700px) {
+    .home{
+        h1{
+            margin-top: 34vh;
+        }
+    background-position: bottom;
+        background-image: url("../../images/Untitled\ \(Phone\ Wallpaper\)\ \(Phone\ Wallpaper\)-min.jpg");
+    }
+}
+
+@media screen and (max-width:550px) {
+    .home{
+        h1{
+            margin-top: 38vh;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+   .home{
+
+       h1{
+        margin-top: 43vh;
+           font-size: 3rem;
+        }
+        p{
+            font-size: large;
+        }
+    }
+  }

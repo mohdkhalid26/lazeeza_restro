@@ -1,48 +1,102 @@
-.black-bg{
-    background-color: rgba(0, 0, 0, 0.700);
-    transition: background-color 700ms ;
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 700ms;
 }
-.navbar{
-    z-index: 1;
-    transition: background-color 700ms ;
+.navbar {
+  z-index: 1;
+  transition: background-color 700ms;
+  min-height: 16vh;
+  max-height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin-left: 16px;
+    img {
+    height: 16vh;
+      &::selection {
+        background: transparent;
+      }
+    }
+  }
+  .options {
+    margin-right: 25px;
+    max-width: 43vw;
+    width: 100%;
     min-height: 16vh;
-    max-height: 16vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    .logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: fit-content;
-        margin-left: 16px;
-        img{
-            width: 16vh;
-            &::selection{
-                background: transparent;
-            }
-        }
+    .span {
+      text-decoration: none;
+      font-size: large;
+      text-align: center;
+      max-width: fit-content;
+      cursor: pointer;
+      color: gold;
+      &:hover {
+        text-decoration: underline;
+      }
     }
-    .options{
-        margin-right: 25px;
-        max-width: 43vw;
-        width: 100%;
-        min-height: 16vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .span{
-            text-decoration: none;
-            font-size: large;
-            text-align: center;
-            max-width: fit-content;
-            cursor: pointer;
-            color: gold;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
+  }
 }
+
+@media screen and (max-width: 1111px) {
+  .navbar {
+    .options {
+      max-width: 52vw;
+    }
+  }
+}
+  @media screen and (max-width : 970px) {
+    .navbar{
+        
+        .options{
+            max-width: 61vw;
+        }
+    }
+
+  }
+
+
+  @media screen and (max-width : 772px) {
+    .navbar{
+      min-height: 14vh;
+      max-height: 14vh;
+        .logo{
+            img{
+            height: 14vh;
+            }
+        }
+        .options{
+            .span{
+              font-size: medium;
+            }
+        }
+    }
+
+  }
+  
+  @media screen and (max-width : 480px) {
+    .navbar{
+      min-height: 10vh;
+      max-height: 10vh;
+      
+    .options {
+      max-width: 70vw;
+    }
+        .logo{
+            img{
+            height: 10vh;
+            }
+        }
+    }
+
+  }
+  
