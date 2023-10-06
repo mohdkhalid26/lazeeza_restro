@@ -44,3 +44,14 @@
         }
       }
 }
+
+@media screen and (max-width:480px) {
+  .menu {
+    .img-div {
+      img {
+        width: 100vw;
+      }
+    }
+  }
+    
+}

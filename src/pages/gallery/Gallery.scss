@@ -46,3 +46,13 @@
     }
   }
 }
+@media screen and (max-width:480px) {
+  .gallery {
+    .img-div {
+      img {
+        width: 100vw;
+      }
+    }
+  }
+    
+}
